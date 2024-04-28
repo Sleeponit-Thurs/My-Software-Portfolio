@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+
+        {
+            "label": "build-C#",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/C#/C#.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

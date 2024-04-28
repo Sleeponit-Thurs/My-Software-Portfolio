@@ -1,0 +1,14 @@
+C:\Users\jasee\Documents\My Software Portfolio\C#\bin\Debug\net7.0\C#.exe
+C:\Users\jasee\Documents\My Software Portfolio\C#\bin\Debug\net7.0\C#.deps.json
+C:\Users\jasee\Documents\My Software Portfolio\C#\bin\Debug\net7.0\C#.runtimeconfig.json
+C:\Users\jasee\Documents\My Software Portfolio\C#\bin\Debug\net7.0\C#.dll
+C:\Users\jasee\Documents\My Software Portfolio\C#\bin\Debug\net7.0\C#.pdb
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\C#.AssemblyInfoInputs.cache
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\C#.AssemblyInfo.cs
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\C#.csproj.CoreCompileInputs.cache
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\C#.dll
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\refint\C#.dll
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\C#.pdb
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\C#.genruntimeconfig.cache
+C:\Users\jasee\Documents\My Software Portfolio\C#\obj\Debug\net7.0\ref\C#.dll
