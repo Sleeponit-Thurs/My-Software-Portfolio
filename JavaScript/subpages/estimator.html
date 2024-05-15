@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob's Lawn Care Price Estimator</title>
+</head>
+<body>
+    <h1>Price Estimator</h1>
+    <p>Use the form below to get an estimate for your lawn care service.</p>
+    <p>Choose a service from the dropdown menu and click the "Add another service" button to add additional services to your estimate.</p>
+    <p>When you are finished, click the "Calculate Total" button to get your estimate.</p>
+    <p>Mowing service is based on the square footage of your lawn while hedge trimming and edging are per job *assuming average size residence, additional charges may apply*</p>
+    <form id="estimator">
+        <div id="services">
+            <label for="service1">Select a Service:</label>
+            <select id="service1" name="service1">
+                <option value="mowing">Lawn Mowing</option>
+                <option value="edging">Edging</option>
+                <option value="trimming">Trimming</option>
+            </select>
+        </div>
+        <button type="button" id="add-service">Add another service</button>
+    </form>
+            
+    <script src="Estimatorjs\addServiceEstimator.js"></script>
+</body>
+</html>

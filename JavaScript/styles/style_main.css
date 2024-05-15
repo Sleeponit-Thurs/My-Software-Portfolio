@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 15px;
+    background-color: #dee0c0;
+}
+nav{
+    background-color: #72833f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    display: inline;
+    position: fixed;
+    width: 100%; /* fill the width of the page */
+    top: 0;
+    left: 0; /* position at the very top left */
+}
+nav a {
+    color: #35331a; /* text color */
+    text-decoration: none; /* remove underline */
+    border-radius: 10px; /* rounded corners */
+    margin: 10px 5%; /* space between buttons */
+    
+}
+nav a:hover {
+    background-color: #c8df59; /* background color on hover */
+}
+#frontpage{
+    display: flex;
+    justify-content: space-between;
+}
+#summary{
+    position: relative;
+    top: 250px; /* move below nav bar */
+    width: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+#bob{
+    position: relative;
+    top: 150px; /* move below nav bar */
+    width: 50%;
+}
