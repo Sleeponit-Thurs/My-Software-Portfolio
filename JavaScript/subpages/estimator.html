@@ -11,17 +11,21 @@
     <p>Choose a service from the dropdown menu and click the "Add another service" button to add additional services to your estimate.</p>
     <p>When you are finished, click the "Calculate Total" button to get your estimate.</p>
     <p>Mowing service is based on the square footage of your lawn while hedge trimming and edging are per job *assuming average size residence, additional charges may apply*</p>
+    <p>Prices are subject to change based on the size of the job and the condition of the lawn.</p>
+    <p>Trimming $25, edging, 20, mowing $0.02 per square foot</p>
     <form id="estimator">
         <div id="services">
             <label for="service1">Select a Service:</label>
             <select id="service1" name="service1">
-                <option value="mowing">Lawn Mowing</option>
                 <option value="edging">Edging</option>
                 <option value="trimming">Trimming</option>
+                <option value="mowing">Lawn Mowing</option>
             </select>
         </div>
         <button type="button" id="add-service">Add another service</button>
     </form>
+    <button type="button" id="calculate-total">Calculate Total</button>
+    <p id="total"></p>
             
     <script src="Estimatorjs\addServiceEstimator.js"></script>
 </body>
