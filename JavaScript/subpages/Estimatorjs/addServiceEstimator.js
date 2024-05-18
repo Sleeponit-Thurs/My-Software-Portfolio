@@ -4,7 +4,7 @@ document.getElementById('service1').addEventListener('change', function() {
     var selectedOption = this.options[this.selectedIndex].value;
 
     // Check if the selected option is "mowing"
-    if (selectedOption === 'mowing') {
+    if (selectedOption == 'mowing') {
         // Create a new text input field
         var input = document.createElement('input');
         input.type = 'text';
@@ -29,25 +29,25 @@ document.getElementById('add-service').addEventListener('click', function() {
     var serviceCount = servicesDiv.getElementsByTagName('select').length;
 
     var label = document.createElement('label');
-    label.setAttribute('for', 'service' + (serviceCount + 1));
+    label.setAttribute('for', 'service' + (serviceCount));
     label.textContent = 'Select another Service:';
 
     var select = document.createElement('select');
-    select.id = 'service' + (serviceCount + 1);
-    select.name = 'service' + (serviceCount + 1);
+    select.id = 'service' + (serviceCount);
+    select.name = 'service' + (serviceCount);
 
     // this code adds the text box for the square footage of the lawn on the new service if chosen
     select.addEventListener('change', function() {
         var selectedOption = this.options[this.selectedIndex].value;
 
-        if (selectedOption === 'mowing') {
+        if (selectedOption == 'mowing') {
             var input = document.createElement('input');
             input.type = 'text';
-            input.name = 'squareFootage' + (serviceCount + 1);
+            input.name = 'squareFootage' + (serviceCount);
             input.placeholder = 'Enter square footage';
             servicesDiv.appendChild(input);
         } else {
-            var input = document.querySelector('input[name="squareFootage' + (serviceCount + 1) + '"]');
+            var input = document.querySelector('input[name="squareFootage' + (serviceCount) + '"]');
             if (input) {
                 input.remove();
             }
@@ -71,28 +71,30 @@ document.getElementById('calculate-total').addEventListener('click', function() 
     var serviceCount = servicesDiv.getElementsByTagName('select').length;
     ///The first section counts the number of mows, and the square footage of each mow from the text boxes
     /// array to hold the square footage of each mow
-    lawnSquareFootage = [];
-    for (var i = 0; i < serviceCount; i++) {
-        var select = servicesDiv.getElementsByTagName('select')[i];
-        var selectedOption = select.options[select.selectedIndex].value;
-        if (selectedOption === 'mowing') {
-            var input = servicesDiv.getElementsByTagName('input')[i];
-            var squareFootage = parseInt(input.value);
-            lawnSquareFootage.push(squareFootage);
-        }
-    }
-    ///The following counts each selected option to give a total count of services.
-    var trimmingCount = 0;
+    var lawnSquareFootage = [];
+    var trimmingCount = 0; 
     var edgingCount = 0;
     var mowingCount = 0;
     for (var i = 0; i < serviceCount; i++) {
         var select = servicesDiv.getElementsByTagName('select')[i];
         var selectedOption = select.options[select.selectedIndex].value;
-        if (selectedOption === 'trimming') {
+        if (selectedOption == 'mowing' || selectedOption == 'Mowing') {
+            mowingCount = mowingCount + 1;
+            var input = servicesDiv.getElementsByTagName('input')[mowingCount - 1];
+            var squareFootage = parseInt(input.value);
+            lawnSquareFootage.push(squareFootage);
+        }
+    }
+    ///The following counts each selected option to give a total count of services.
+    var mowingCount = 0;
+    for (var i = 0; i < serviceCount; i++) {
+        var select = servicesDiv.getElementsByTagName('select')[i];
+        var selectedOption = select.options[select.selectedIndex].value;
+        if (selectedOption == 'trimming') {
             trimmingCount = trimmingCount + 1;
-        } else if (selectedOption === 'edging') {
+        } else if (selectedOption == 'edging') {
             edgingCount = edgingCount + 1;
-        } else if (selectedOption === 'mowing') {
+        } else if (selectedOption == 'mowing' || selectedOption == 'Mowing') {
             mowingCount = mowingCount + 1;
         }
     }
