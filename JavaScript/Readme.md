@@ -23,3 +23,7 @@ The cost calculation is based on the following rates:
 - Mowing: $0.02 per square foot
 
 The total cost is calculated by multiplying the count of each service by its rate, then adding these totals together. The total cost is then displayed on the page, formatted to two decimal places.
+
+
+## Video Demonstration
+https://cdnapisec.kaltura.com/index.php/extwidget/preview/partner_id/1157612/uiconf_id/42438192/entry_id/1_y42kn0qd/embed/dynamic
